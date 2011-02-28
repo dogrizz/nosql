@@ -1,1 +1,5 @@
 Dzialanie na danych z http://www.jitonomic.com/Api/MarketProducts/xml
+Skrypt zasysający dane do couchdb: skrypty/downloader.py
+
+Sposób uzycia:
+
