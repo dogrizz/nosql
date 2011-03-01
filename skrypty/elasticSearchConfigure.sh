@@ -20,6 +20,8 @@ curl -XPUT 'localhost:9200/_river/$1_idx/_meta' -d '{
         "bulk_timeout" : "10ms"
     }
 }'
-
-echo "Powinno sie dac sie zadawac zapytania na http://localhost:9200/$1_idx/$1"
+if [ $? == 0  ]
+then 
+  echo "Powinno sie dac sie zadawac zapytania na http://localhost:9200/$1_idx/$1"
+fi
 
