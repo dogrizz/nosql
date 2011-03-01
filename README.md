@@ -7,4 +7,5 @@
 5. czekamy..
 
 # [ElasticSearch](http://www.elasticsearch.org/)
+Wywołać:
 > skrypty/elasticSearchConfigure.sh marketProduct
