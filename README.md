@@ -1,4 +1,3 @@
-
 # Procedura sciagniecia danych:
 1. W skrypty/downloader.py ustawiamy adres naszej bazy danych.
 2. Sciagamy http://www.jitonomic.com/Api/MarketProducts/xml
@@ -8,4 +7,4 @@
 
 # [ElasticSearch](http://www.elasticsearch.org/)
 Wywołać:
-> skrypty/elasticSearchConfigure.sh marketProduct
+> skrypty/elasticSearchConfigure.sh marketproduct
