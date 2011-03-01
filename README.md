@@ -5,3 +5,6 @@
 3. Instalujemy http://code.google.com/p/couchdb-python/
 4. Odpalamy skrypt podajac mu sciezke do sciagnietego pliku xml
 5. czekamy..
+
+# [ElasticSearch](http://www.elasticsearch.org/)
+> skrypty/elasticSearchConfigure.sh marketProduct
