@@ -6,15 +6,16 @@ then
 	exit
 fi
 
-curl -XPUT 'localhost:9200/_river/'$1'_idx/_meta' -d '{
+curl -XPUT 'localhost:9200/_river/'$1'/_meta' -d '{
     "type" : "couchdb",
     "couchdb" : {
-        "host" : "sigma.inf.ug.edu.pl",
-        "port" : 14016,
+        "host" : "localhost",
+        "port" : 5984,
         "db" : "'$1'",
         "filter" : null
     },
-        "index" : "'$1'_idx",
+    "index" : {
+        "index" : "'$1'",
         "type" : "'$1'",
         "bulk_size" : "100",
         "bulk_timeout" : "10ms"
@@ -22,6 +23,7 @@ curl -XPUT 'localhost:9200/_river/'$1'_idx/_meta' -d '{
 }'
 if [ $? == 0  ]
 then 
-  echo "Powinno sie dac sie zadawac zapytania na http://localhost:9200/$1_idx/$1"
+  echo
+  echo "Powinno sie dac sie zadawac zapytania na http://localhost:9200/$1/$1"
 fi
 
