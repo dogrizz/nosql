@@ -27,7 +27,7 @@ var vis = new pv.Panel()
 var tree = vis.add(pv.Layout.Tree)
     .nodes(pv.dom(data).root("items").nodes())
     .depth(9850)
-    .breadth(7.25)
+    .breadth(20)
     .orient("radial");
 
 tree.link.add(pv.Line);

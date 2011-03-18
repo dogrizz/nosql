@@ -14,14 +14,14 @@ for key, value in db.views.marketproduct.podaz(group_level=3).items():
 		if len(tree[key[0]]) != 0:
 			try:
 				if len(tree[key[0]][key[1]]) != 0:
-					tree[key[0]][key[1]][key[2]] = value
+					tree[key[0]][key[1]][key[2]+": "+str(value)] = value
 			except KeyError:
 				tree[key[0]][key[1]] = {}
-				tree[key[0]][key[1]][key[2]] = value
+				tree[key[0]][key[1]][key[2]+": "+str(value)] = value
 	except KeyError:
 		tree[key[0]] = {}
 		tree[key[0]][key[1]] = {}
-		tree[key[0]][key[1]][key[2]] = value
+		tree[key[0]][key[1]][key[2]+": "+str(value)] = value
 
 f = open('tree.js', 'w')
 f.write("var data = "+json.dumps(tree)+";")
