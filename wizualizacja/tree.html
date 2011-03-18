@@ -1,14 +1,14 @@
 <html>
   <head>
-    <title>Node-Link Tree</title>
-    <link type="text/css" rel="stylesheet" href="ex.css?3.2"/>
-    <script type="text/javascript" src="../protovis-r3.2.js"></script>
+    <title>Eve Items</title>
+    <link type="text/css" rel="stylesheet" href="ex.css"/>
+    <script type="text/javascript" src="protovis-r3.2.js"></script>
     <script type="text/javascript" src="tree.js"></script>
     <style type="text/css">
 
 #fig {
-  width: 800px;
-  height: 700px;
+  width: 60000px;
+  height: 60000px;
 }
 
     </style>
@@ -17,16 +17,16 @@
     <script type="text/javascript+protovis">
 
 var vis = new pv.Panel()
-    .width(800)
-    .height(800)
+    .width(60000)
+    .height(60000)
     .left(75)
     .right(-75)
     .top(-30)
     .bottom(-80);
 
 var tree = vis.add(pv.Layout.Tree)
-    .nodes(pv.dom(flare).root("flare").nodes())
-    .depth(85)
+    .nodes(pv.dom(data).root("items").nodes())
+    .depth(9850)
     .breadth(7.25)
     .orient("radial");
 
