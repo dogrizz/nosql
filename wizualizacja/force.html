@@ -26,13 +26,13 @@ var vis = new pv.Panel()
     .event("mousewheel", pv.Behavior.zoom());
 
 var force = vis.add(pv.Layout.Force)
-    .nodes(nodes)
-    .links(links);
+    .nodes(data.nodes)
+    .links(data.links);
 
-force.link.add(pv.Line);
+force.link.add(pv.Line).lineWidth(1);
 
 force.node.add(pv.Dot)
-    .size(function(d) (d.linkDegree + 4) * Math.pow(this.scale, -1.5))
+    .size(function(d) (d.linkDegree + 10) * Math.pow(this.scale, 1.5))
     .fillStyle(function(d) d.fix ? "brown" : colors(d.group))
     .strokeStyle(function() this.fillStyle().darker())
     .lineWidth(1)
