@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>Eve items</title>
+    <link type="text/css" rel="stylesheet" href="ex.css"/>
+    <script type="text/javascript" src="protovis-r3.2.js"></script>
+    <script type="text/javascript" src="tree.js"></script>
+    <style type="text/css">
+
+#fig {
+  width: 600px;
+  height: 120000px;
+}
+
+    </style>
+  </head>
+  <body><div id="center"><div id="fig">
+    <script type="text/javascript+protovis">
+
+var vis = new pv.Panel()
+    .width(600)
+    .height(120000)
+    .left(40)
+    .right(360)
+    .top(10)
+    .bottom(10);
+
+var layout = vis.add(pv.Layout.Cluster)
+    .nodes(pv.dom(data)
+        .root("Items")
+        .sort(function(a, b) pv.naturalOrder(a.nodeName, b.nodeName))
+        .nodes())
+    .group(true)
+    .orient("left");
+
+layout.link.add(pv.Line)
+    .strokeStyle("#ccc")
+    .lineWidth(1)
+    .antialias(false);
+
+layout.node.add(pv.Dot)
+    .fillStyle(function(n) n.firstChild ? "#aec7e8" : "#ff7f0e");
+
+layout.label.add(pv.Label);
+
+vis.render();
+
+    </script>
+  </div></div></body>
+</html>
