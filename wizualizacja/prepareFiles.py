@@ -12,8 +12,6 @@ nodes = []
 links = []
 categories_id = {}
 categories_val = {}
-groups_val = {}
-groups_id = {}
 
 for doc in db.views.marketproduct.podaz():
   total =  doc
@@ -31,13 +29,9 @@ for key, value in db.views.marketproduct.podaz(group_level=1).items():
 		val = int((value*1000)/total)
 	links.append({"source":0,"target":id,"value":val})
 
-f = open('data.js', 'w')
+f = open('force.js', 'w')
 
 f.write("var data = {nodes:"+json.dumps(nodes))
 f.write(",\n")
 f.write("links:"+json.dumps(links)+"};")
-	
-for key, value in db.views.marketproduct.podaz(group_level=3).items():
-	pass	
-
 
