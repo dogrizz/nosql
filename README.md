@@ -25,6 +25,6 @@ Tworzymy lokalne pliki z danymi:
 I otwieramy pliki html w przeglądarce.
 Wizualizacja przeprowadzona z użyciem biblioteki JavaScriptu [protovis](http://vis.stanford.edu/protovis)
 Gotowe wizualizacje
-* [force](http://piwnica.gotdns.org/~dogrizz/wizualizacja/force.html)
-* [circle tree](http://piwnica.gotdns.org/~dogrizz/wizualizacja/tree.html) trzeba poszukac danych na wykresie (jest ogromny)
-* [dendogram](http://piwnica.gotdns.org/~dogrizz/wizualizacja/dendogram.html)
+ * [force](http://piwnica.gotdns.org/~dogrizz/wizualizacja/force.html)
+ * [circle tree](http://piwnica.gotdns.org/~dogrizz/wizualizacja/tree.html) trzeba poszukac danych na wykresie (jest ogromny)
+ * [dendogram](http://piwnica.gotdns.org/~dogrizz/wizualizacja/dendogram.html)
