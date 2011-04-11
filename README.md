@@ -9,7 +9,9 @@
 Widoki zawierajace podaz i popyt pogrupowane po kategorii, grupie, produkcie.
 
 > couchapp push widoki.js http://sigma.inf.ug.edu.pl:14016/marketproduct
+
 Lub odpowiednik napisany w pythonie ( wymaga http://code.google.com/p/couchdb-python )
+
 > ./widoki.py
 
 # Wizualizacja
