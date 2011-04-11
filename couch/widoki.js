@@ -1,4 +1,4 @@
-// couchapp push wc.js http://Admin:Pass@localhost:4000/gutenberg
+// couchapp push widoki.js http://localhost:14016/marketproduct
 
 var couchapp = require('couchapp');
 
