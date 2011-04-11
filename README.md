@@ -17,6 +17,7 @@ Widoku zawierające dane dotyczące podazy.
 Wymagana jest biblioteka http://mikeal.github.com/couchquery
 Tworzymy lokalne pliki z danymi:
 > ./prepareTree.py
+
 > ./prepareForce.py
 
 I otwieramy pliki html w przeglądarce.
