@@ -13,11 +13,11 @@ Lub odpowiednik napisany w pythonie ( wymaga http://code.google.com/p/couchdb-py
 > ./widoki.py
 
 # Wizualizacja
-Widoku zawieraj±ce dane dotycz±ce podazy.
+Widoku zawierajÄ…ce dane dotyczÄ…ce podazy.
 Wymagana jest biblioteka http://mikeal.github.com/couchquery
 Tworzymy lokalne pliki z danymi:
 > ./prepareTree.py
 > ./prepareForce.py
 
-I otwieramy pliki html w przegl±darce.
-Wizualizacja przeprowadzona z u¿yciem biblioteki JavaScriptu http://vis.stanford.edu/protovis
+I otwieramy pliki html w przeglÄ…darce.
+Wizualizacja przeprowadzona z uÅ¼yciem biblioteki JavaScriptu http://vis.stanford.edu/protovis
