@@ -15,7 +15,7 @@ Lub odpowiednik napisany w pythonie ( wymaga http://code.google.com/p/couchdb-py
 > ./widoki.py
 
 # Wizualizacja
-Widoku zawierające dane dotyczące podazy.
+Wizualizcja widoku zawierającego dane dotyczące podazy.
 Wymagana jest biblioteka http://mikeal.github.com/couchquery
 Tworzymy lokalne pliki z danymi:
 > ./prepareTree.py
